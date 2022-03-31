@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Intech Hub Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/custom-script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+
+  </head>
+  <body>
+    <section class="dashboard_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 sidebar_sect">
+            <div class="sidebar_sect">
+              <h2><img src="img/Test-Logo.svg" /></h2>
+              <ul>
+                <li>
+                  <a href="#" class="active"><img src="img/Dashboard.svg" />Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/Orders.svg" />Orders</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/Products.svg" />Products</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/Customer.svg" />Customer</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/Message.svg" />Message</a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/Setting.svg" />Settings</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="dashboard_main">
+				<div class="row top1">
+					<div class="col-lg-6">
+						<div class="top_banner">
+							<h1>Dashboard</h1>
+						</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="top_banner_name">
+								<p>Jhone Doe <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+							</div>
+								<div class="top_banner_first_image">
+									<img src="img/User.png">
+								</div>
+								<div class="top_banner_links">
+									<a href="#"><img src="img/Mail.svg"></a>
+									<a href="#"><img src="img/Notification.svg"></a>
+							</div>
+						</div>
+						</div>
+						<h3 style="padding: 20px">Overview</h3>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="mini_graph_box">
+                    <h6>
+                      <img src="img/Total-Customer.svg" /> Total Customer visit
+                      <span>721,345</span>
+					  <div id="linechartContainer">
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mini_graph_box">
+                    <h6>
+                      <img src="img/Total-Orders.svg" />Total Ordered
+                      <span>7,345</span>
+					  <div id="linechartContainer2">
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mini_graph_box">
+                    <h6>
+                      <img src="img/Total-Pending.svg" />Total Pending
+                      <span>1,345</span>
+					  <div id="linechartContainer3">
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="mini_graph_box">
+                    <h6>
+                      <img src="img/Total-Delivered.svg" />Total Delivered
+                      <span>21,345</span>
+					   <div id="linechartContainer4">
+                    </h6>
+                  </div>
+                </div>
+              </div>
+			  <div class="row">
+				  <div class="col-lg-8 text-center">
+					  <div class="mini_graph_box country_map">
+					  <div class="row">
+						  <div class="col-lg-6">
+							<h5 style="text-align: left !important;">Customer visit on site</h5>
+						  </div>
+						  <div class="col-lg-6">
+							<ul>
+								<li>Year</li>
+								<li>Month </li>
+								<li>Week</li>
+								<li style="color: #000 !important">Day</li>
+							</ul>
+						  </div>
+					  </div>
+					  <div class="country_map_image">
+						<img class="text-center" src="img/country.svg">
+					  </div>
+				  
+				  <div class="country_table">
+					<table>
+						<tr class="head_table_country">
+							<td>Total Visit</td>
+							<td>Order</td>
+							<td>Pending</td>
+							<td>Delivered</td>
+						</tr>
+						<tr>
+							<td>721,345</td>
+							<td>43,820</td>
+							<td>233,820</td>
+							<td>343,820</td>
+						</tr>
+					</table>
+				  </div>
+				</div>
+					</div>
+				  <div class="col-lg-4">
+					<div class="mini_graph_box payment_box">
+						<table>
+							<thead>
+								<td><h5>Income Recived</h5></td>
+							</thead>
+							<tbody>
+								<tr>
+									<td><img src="img/Google-Pay.png">Google Pay</td>
+									<td>$721,345</td>
+								</tr>
+								<tr>
+									<td><img src="img/Phonepe.png">Phonepe</td>
+									<td>$23,482</td>
+								</tr>
+								<tr>
+									<td><img src="img/Amazon.png">Amazon</td>
+									<td>$382</td>
+								</tr>
+								<tr>
+									<td><img src="img/UPI-1.png">UPI</td>
+									<td>$43,820</td>
+								</tr>
+								<tr>
+									<td><img src="img/Bank.svg">Bank Transfer</td>
+									<td>$53,847</td>
+								</tr>
+								<tr>
+									<td><img src="img/Cash-on-Delivery.svg">Cash on Delivery</td>
+									<td>$72,920</td>
+								</tr>
+								<tr>
+									<td><img src="img/Paytm.png">Paytm</td>
+									<td>$824</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			  </div>
+			  <div class="row three_graph">
+				<div class="col-lg-4">
+					<div class="text-center mini_graph_box">
+						<div class="single-chart">
+							<h5>Target Achieved</h5>
+							<svg viewBox="0 0 36 36" class="circular-chart green">
+							  <path class="circle-bg"
+								d="M18 2.0845
+								  a 15.9155 15.9155 0 0 1 0 31.831
+								  a 15.9155 15.9155 0 0 1 0 -31.831"
+							  />
+							  <path class="circle"
+								stroke-dasharray="60, 100"
+								d="M18 2.0845
+								  a 15.9155 15.9155 0 0 1 0 31.831
+								  a 15.9155 15.9155 0 0 1 0 -31.831"
+							  />
+							  <text x="18" y="20.35" class="percentage">60%</text>
+							</svg>
+						  </div>						
+						<div class="radio_box">
+							<div class="row">
+								<div class="col-lg-6">
+									<label class="container">Completed
+										<input type="radio" name="radio">
+										<span class="check"></span>
+									  </label>
+								</div>
+								<div class="col-lg-6">
+									<label class="container">Incompleted
+										<input type="radio" name="radio">
+										<span class="check"></span>
+									  </label>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="mini_graph_box pie_chart_box">
+						<main>
+							<h5>Total Earnings</h5>
+							<section>
+							  <div class="pieID pie">
+								
+							  </div>
+							  <ul class="pieID legend">
+								<li>
+								  <em>Profit</em>
+								  <span>718</span>
+								</li>
+								<li>
+								  <em>Margin</em>
+								  <span>531</span>
+								</li>
+								<li>
+								  <em>Others</em>
+								  <span>868</span>
+								</li>
+								<li>
+								  <em>Loss</em>
+								  <span>344</span>
+								</li>
+							  </ul>
+							</section>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="mini_graph_box dual_bar_chart">
+						<div class="dual_bar_head">
+							<h5>Total Profit & Loss</h5>
+						</div>
+						<div>
+							<canvas id="myChart"></canvas>
+						  </div>
+					</div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="last_table mini_graph_box">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="last_table_header">
+									<h5>Customer Order Details</h5>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="last_table_header2">
+									<ul>
+										<li>Year</li>
+										<li>Month </li>
+										<li>Week</li>
+										<li style="color: #000 !important">Day</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+							<table>
+								<thead>
+									<tr style="color: #C1CFD9;">
+										<th class="sortable asc">ORDER NO</th>
+										<th class="sortable">CUSTOMER NAME</th>
+										<th class="sortable">ADDRESS</th>
+										<th class="sortable">DATE</th>
+										<th class="sortable">PAYMENT TYPE</th>
+										<th class="sortable">PAYMENT STATUS</th>
+										<th class="sortable">DELIVERY STATUS</th>
+									</tr>
+								</thead>
+							 
+							<tr> <td>#243654</td>
+									<td>Quiche Hollandaise</td>
+									<td>4693 White Oak Drive Kansas City, MO</td>
+									<td style="color: #C1CFD9;">20 Nov 2021</td>
+									<td>Paytm</td>
+									<td>
+									  <p class="status status-failed1">Unpaid</p>
+									</td>
+									<td>
+										<p class="status status-unpaid">Unpaid</p>
+									  </td>
+							
+								  </tr>
+							
+									
+								  <tr>
+									<td>#253461</td>
+									<td>Ingredia Nutrisha</td>
+									<td>2298 Jessie Street Columbus, OH</td>
+									<td style="color: #C1CFD9;">20 Nov 2021</td>
+									<td>Google Pay</td>
+									
+									<td>
+									  <p class="status status-paid1">Paid</p>
+									</td>
+									<td>
+										<p class="status status-paid">Paid</p>
+									  </td>
+							
+								  </tr>
+								  <tr>
+									<td>#263942</td>
+									<td>Valentino Morose</td>
+									<td>3327 Taylor Street New York, NY</td>
+									<td style="color: #C1CFD9;">20 Nov 2021</td>
+									<td>Phonepe</td>
+									
+									<td>
+									  <p class="status status-processing1">processing</p>
+									</td>
+									<td>
+										<p class="status status-processing">processing</p>
+									  </td>
+							
+								  </tr>
+								  <tr>
+									<td>#264142</td>
+									<td>Abraham Pigeon</td>
+									<td>1065 Willis Avenue Daytona Beach, FL</td>
+									<td style="color: #C1CFD9;">20 Nov 2021</td>
+									<td>Cash On Delivery</td>
+									
+									<td>
+									  <p class="status status-processing1">processing</p>
+									</td>
+									<td>
+										<p class="status status-processing">processing</p>
+									  </td>
+							
+								  </tr>
+								  <tr>
+									<td>#265242</td>
+									<td>Raymond B. Pacheco</td>
+									<td>1457 Ferguson Street Worcester, MA</td>
+									<td style="color: #C1CFD9;">20 Nov 2021</td>
+									<td>Google Pay</td>
+									<td>
+									  <p class="status status-paid1">Paid</p>
+									</td>
+									<td>
+										<p class="status status-paid">Paid</p>
+									  </td>
+							
+								  </tr>
+							</tr>
+							
+							</table>
+							<!-- <div class="pagination">
+								<a href="#"><i class="fas fa-chevron-left"></i></a>
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#"><i class="fas fa-chevron-right"></i></a>
+							  </div> -->
+							  <div class="row">
+								  <div class="col-lg-3 pagination">
+									<p>Showing 1 to 10 of 100 entries</p>
+								  </div>
+								  <div class="col-lg-9">
+									<nav class="pagination">
+										<ul class="crumbs">
+										  <li><a class="crumb crumb__prev" href="#previous">Previous</a></li>
+										  <li><a class="crumb crumb__active" href="#1">1</a></li>
+										  <li><a class="crumb" href="#2">2</a></li>
+										  <li><a class="crumb" href="#3">3</a></li>
+										  <li><a class="crumb" href="#4">4</a></li>
+										  <li><a class="crumb" href="#5">5</a></li>
+										  <li><a class="crumb" href="#6">6</a></li>
+										  <li><a class="crumb" href="#7">7</a></li>
+										  <li><a class="crumb" href="#8">8</a></li>
+										  <li><a class="crumb" href="#9">9</a></li>
+										  <li><a class="crumb" href="#10">10</a></li>
+										  <li><a class="crumb" href="#11">11</a></li>
+										  <li><a class="crumb" href="#12">12</a></li>
+										  <li><a class="crumb crumb__next" href="#next">Next</a></li>
+										</ul>
+									  </nav>
+								  </div>
+							  </div>
+					</div>
+				</div>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		<script>
+			var $sortable = $('.sortable');
+
+$sortable.on('click', function(){
+  
+  var $this = $(this);
+  var asc = $this.hasClass('asc');
+  var desc = $this.hasClass('desc');
+  $sortable.removeClass('asc').removeClass('desc');
+  if (desc || (!asc && !desc)) {
+    $this.addClass('asc');
+  } else {
+    $this.addClass('desc');
+  }
+  
+});
+		</script>
+	<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+    datasets: [{
+      label: '$256.48',
+      data: [12, 19, 3, 17, 28, 24, 7],
+      backgroundColor: "#46CA83"
+    }, {
+      label: '$187.39',
+      data: [30, 29, 5, 5, 20, 3, 10],
+      backgroundColor: "#E96559"
+    }]
+  }
+});
+	</script>
+	<script>
+		function lineChart(containerid)
+{
+
+    var lineData = [
+        {
+            "sale": "202",
+            "year": "2000"
+        },
+        {
+            "sale": "273",
+            "year": "2001"
+        },
+        {
+            "sale": "204",
+            "year": "2002"
+        },
+        {
+            "sale": "205",
+            "year": "2003"
+        },
+        {
+            "sale": "346",
+            "year": "2004"
+        },
+        {
+            "sale": "207",
+            "year": "2005"
+        },
+        {
+            "sale": "368",
+            "year": "2006"
+        },
+        {
+            "sale": "209",
+            "year": "2007"
+        },
+        {
+            "sale": "340",
+            "year": "2008"
+        },
+        {
+            "sale": "311",
+            "year": "2009"
+        },
+        {
+            "sale": "232",
+            "year": "2010"
+        }
+    ];
+
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var options = {
+        containerid : containerid || "linechartcontainer",
+        width       : document.getElementById(containerid).clientWidth,
+        height      : document.getElementById(containerid).clientHeight,
+        margin      : {top : 20, right : 20, bottom : 20, left : 20 },
+        actualwidth : function(){
+            return this.width - this.margin.left - this.margin.right;
+        },
+        actualheight: function(){
+            return this.height - this.margin.top - this.margin.bottom;
+        }
+    };
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var chart = d3.select("#"+options.containerid)
+        .append("svg")
+        .attr("width", options.width)
+        .attr("height", options.height);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var xScale = d3.scale.linear()
+        .range([options.margin.left + 20, options.width - options.margin.right])
+        .domain([d3.min(lineData, function(d){return d.year}), d3.max(lineData, function(d){return d.year})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var yScale = d3.scale.linear()
+        .range([options.height - options.margin.top, options.margin.bottom])
+        .domain([0, d3.max(lineData, function(d){return d.sale})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var lineGen = d3.svg.line()
+        .x(function(d){
+            return xScale(d.year);
+        })
+        .y(function(d){
+            return yScale(d.sale);
+        })
+        .interpolate("basis");
+
+    chart.append('svg:path')
+        .attr('d', lineGen(lineData))
+        .attr('stroke', '#F7B422')
+        .attr('stroke-width', 3)
+        .attr('fill', 'none')
+        .on("mouseover", function(data){
+            d3.select(this)
+                .attr("stroke-width", 5)
+        })
+        .on("mouseout", function(data){
+            d3.select(this)
+                .attr("stroke-width", 3)
+        });
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+}
+
+lineChart("linechartContainer");
+
+
+
+
+
+
+
+	</script>
+	<script>
+		function lineChart(containerid)
+{
+
+    var lineData = [
+        {
+            "sale": "100",
+            "year": "2000"
+        },
+        {
+            "sale": "273",
+            "year": "2001"
+        },
+        {
+            "sale": "204",
+            "year": "2002"
+        },
+        {
+            "sale": "450",
+            "year": "2003"
+        },
+        {
+            "sale": "200",
+            "year": "2004"
+        },
+        {
+            "sale": "500",
+            "year": "2005"
+        },
+        {
+            "sale": "100",
+            "year": "2006"
+        },
+        {
+            "sale": "409",
+            "year": "2007"
+        },
+        {
+            "sale": "240",
+            "year": "2008"
+        },
+        {
+            "sale": "311",
+            "year": "2009"
+        },
+        {
+            "sale": "232",
+            "year": "2010"
+        }
+    ];
+
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var options = {
+        containerid : containerid || "linechartcontainer",
+        width       : document.getElementById(containerid).clientWidth,
+        height      : document.getElementById(containerid).clientHeight,
+        margin      : {top : 20, right : 20, bottom : 20, left : 20 },
+        actualwidth : function(){
+            return this.width - this.margin.left - this.margin.right;
+        },
+        actualheight: function(){
+            return this.height - this.margin.top - this.margin.bottom;
+        }
+    };
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var chart = d3.select("#"+options.containerid)
+        .append("svg")
+        .attr("width", options.width)
+        .attr("height", options.height);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var xScale = d3.scale.linear()
+        .range([options.margin.left + 20, options.width - options.margin.right])
+        .domain([d3.min(lineData, function(d){return d.year}), d3.max(lineData, function(d){return d.year})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var yScale = d3.scale.linear()
+        .range([options.height - options.margin.top, options.margin.bottom])
+        .domain([0, d3.max(lineData, function(d){return d.sale})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var lineGen = d3.svg.line()
+        .x(function(d){
+            return xScale(d.year);
+        })
+        .y(function(d){
+            return yScale(d.sale);
+        })
+        .interpolate("basis");
+
+    chart.append('svg:path')
+        .attr('d', lineGen(lineData))
+        .attr('stroke', '#A682EF')
+        .attr('stroke-width', 3)
+        .attr('fill', 'none')
+        .on("mouseover", function(data){
+            d3.select(this)
+                .attr("stroke-width", 5)
+        })
+        .on("mouseout", function(data){
+            d3.select(this)
+                .attr("stroke-width", 3)
+        });
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+}
+
+lineChart("linechartContainer2");
+
+
+
+
+
+	</script>
+	<script>
+		function lineChart(containerid)
+{
+
+    var lineData = [
+        {
+            "sale": "202",
+            "year": "2000"
+        },
+        {
+            "sale": "273",
+            "year": "2001"
+        },
+        {
+            "sale": "204",
+            "year": "2002"
+        },
+        {
+            "sale": "205",
+            "year": "2003"
+        },
+        {
+            "sale": "346",
+            "year": "2004"
+        },
+        {
+            "sale": "207",
+            "year": "2005"
+        },
+        {
+            "sale": "368",
+            "year": "2006"
+        },
+        {
+            "sale": "209",
+            "year": "2007"
+        },
+        {
+            "sale": "340",
+            "year": "2008"
+        },
+        {
+            "sale": "311",
+            "year": "2009"
+        },
+        {
+            "sale": "232",
+            "year": "2010"
+        }
+    ];
+
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var options = {
+        containerid : containerid || "linechartcontainer",
+        width       : document.getElementById(containerid).clientWidth,
+        height      : document.getElementById(containerid).clientHeight,
+        margin      : {top : 20, right : 20, bottom : 20, left : 20 },
+        actualwidth : function(){
+            return this.width - this.margin.left - this.margin.right;
+        },
+        actualheight: function(){
+            return this.height - this.margin.top - this.margin.bottom;
+        }
+    };
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var chart = d3.select("#"+options.containerid)
+        .append("svg")
+        .attr("width", options.width)
+        .attr("height", options.height);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var xScale = d3.scale.linear()
+        .range([options.margin.left + 20, options.width - options.margin.right])
+        .domain([d3.min(lineData, function(d){return d.year}), d3.max(lineData, function(d){return d.year})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var yScale = d3.scale.linear()
+        .range([options.height - options.margin.top, options.margin.bottom])
+        .domain([0, d3.max(lineData, function(d){return d.sale})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var lineGen = d3.svg.line()
+        .x(function(d){
+            return xScale(d.year);
+        })
+        .y(function(d){
+            return yScale(d.sale);
+        })
+        .interpolate("basis");
+
+    chart.append('svg:path')
+        .attr('d', lineGen(lineData))
+        .attr('stroke', '#1ABCB0')
+        .attr('stroke-width', 3)
+        .attr('fill', 'none')
+        .on("mouseover", function(data){
+            d3.select(this)
+                .attr("stroke-width", 5)
+        })
+        .on("mouseout", function(data){
+            d3.select(this)
+                .attr("stroke-width", 3)
+        });
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+}
+
+lineChart("linechartContainer3");
+
+
+
+	</script>
+	<script>
+		function lineChart(containerid)
+{
+
+    var lineData = [
+        {
+            "sale": "100",
+            "year": "2000"
+        },
+        {
+            "sale": "273",
+            "year": "2001"
+        },
+        {
+            "sale": "204",
+            "year": "2002"
+        },
+        {
+            "sale": "450",
+            "year": "2003"
+        },
+        {
+            "sale": "200",
+            "year": "2004"
+        },
+        {
+            "sale": "500",
+            "year": "2005"
+        },
+        {
+            "sale": "100",
+            "year": "2006"
+        },
+        {
+            "sale": "409",
+            "year": "2007"
+        },
+        {
+            "sale": "240",
+            "year": "2008"
+        },
+        {
+            "sale": "311",
+            "year": "2009"
+        },
+        {
+            "sale": "232",
+            "year": "2010"
+        }
+    ];
+
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var options = {
+        containerid : containerid || "linechartcontainer",
+        width       : document.getElementById(containerid).clientWidth,
+        height      : document.getElementById(containerid).clientHeight,
+        margin      : {top : 20, right : 20, bottom : 20, left : 20 },
+        actualwidth : function(){
+            return this.width - this.margin.left - this.margin.right;
+        },
+        actualheight: function(){
+            return this.height - this.margin.top - this.margin.bottom;
+        }
+    };
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var chart = d3.select("#"+options.containerid)
+        .append("svg")
+        .attr("width", options.width)
+        .attr("height", options.height);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var xScale = d3.scale.linear()
+        .range([options.margin.left + 20, options.width - options.margin.right])
+        .domain([d3.min(lineData, function(d){return d.year}), d3.max(lineData, function(d){return d.year})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var yScale = d3.scale.linear()
+        .range([options.height - options.margin.top, options.margin.bottom])
+        .domain([0, d3.max(lineData, function(d){return d.sale})]);
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    var lineGen = d3.svg.line()
+        .x(function(d){
+            return xScale(d.year);
+        })
+        .y(function(d){
+            return yScale(d.sale);
+        })
+        .interpolate("basis");
+
+    chart.append('svg:path')
+        .attr('d', lineGen(lineData))
+        .attr('stroke', '#EB61A5')
+        .attr('stroke-width', 3)
+        .attr('fill', 'none')
+        .on("mouseover", function(data){
+            d3.select(this)
+                .attr("stroke-width", 5)
+        })
+        .on("mouseout", function(data){
+            d3.select(this)
+                .attr("stroke-width", 3)
+        });
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+}
+
+lineChart("linechartContainer4");
+	</script>
+	<script>
+		function sliceSize(dataNum, dataTotal) {
+  return (dataNum / dataTotal) * 360;
+}
+function addSlice(sliceSize, pieElement, offset, sliceID, color) {
+  $(pieElement).append("<div class='slice "+sliceID+"'><span></span></div>");
+  var offset = offset - 1;
+  var sizeRotation = -179 + sliceSize;
+  $("."+sliceID).css({
+    "transform": "rotate("+offset+"deg) translate3d(0,0,0)"
+  });
+  $("."+sliceID+" span").css({
+    "transform"       : "rotate("+sizeRotation+"deg) translate3d(0,0,0)",
+    "background-color": color
+  });
+}
+function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
+  var sliceID = "s"+dataCount+"-"+sliceCount;
+  var maxSize = 179;
+  if(sliceSize<=maxSize) {
+    addSlice(sliceSize, pieElement, offset, sliceID, color);
+  } else {
+    addSlice(maxSize, pieElement, offset, sliceID, color);
+    iterateSlices(sliceSize-maxSize, pieElement, offset+maxSize, dataCount, sliceCount+1, color);
+  }
+}
+function createPie(dataElement, pieElement) {
+  var listData = [];
+  $(dataElement+" span").each(function() {
+    listData.push(Number($(this).html()));
+  });
+  var listTotal = 0;
+  for(var i=0; i<listData.length; i++) {
+    listTotal += listData[i];
+  }
+  var offset = 0;
+  var color = [
+    "#F3B74C", 
+    "#A682EF", 
+    "#1ABCB0", 
+    "#EB61A5"
+  ];
+  for(var i=0; i<listData.length; i++) {
+    var size = sliceSize(listData[i], listTotal);
+    iterateSlices(size, pieElement, offset, i, 0, color[i]);
+    $(dataElement+" li:nth-child("+(i+1)+")").css("border-color", color[i]);
+    offset += size;
+  }
+}
+createPie(".pieID.legend", ".pieID.pie");
+
+	</script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4.724" height="8.498" viewBox="0 0 4.724 8.498">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M4.622.575,2.6,2.6a.326.326,0,0,1-.472,0L.1.575A.327.327,0,0,1,.1.1.326.326,0,0,1,.574.1L2.362,1.893,4.15.1a.326.326,0,0,1,.472,0A.327.327,0,0,1,4.622.575Z" transform="translate(0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Mask-2" data-name="Mask" d="M4.622,2.6a.326.326,0,0,1-.472,0L2.362.811.574,2.6A.326.326,0,0,1,.1,2.6a.327.327,0,0,1,0-.473L2.126.1A.326.326,0,0,1,2.6.1L4.622,2.129A.327.327,0,0,1,4.622,2.6Z" transform="translate(0)"/>
+    </clipPath>
+  </defs>
+  <g id="Sort" transform="translate(-517.258 -294.167)">
+    <g id="chevron-down" transform="translate(517.258 299.961)">
+      <path id="Mask-3" data-name="Mask" d="M4.622.575,2.6,2.6a.326.326,0,0,1-.472,0L.1.575A.327.327,0,0,1,.1.1.326.326,0,0,1,.574.1L2.362,1.893,4.15.1a.326.326,0,0,1,.472,0A.327.327,0,0,1,4.622.575Z" transform="translate(0 0)"/>
+      <g id="chevron-down-2" data-name="chevron-down" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g id="Icon_Color" data-name="Icon Color" transform="translate(-1.687 -2.704)">
+          <rect id="_Icon_Color" data-name="🎨 Icon Color" width="8.098" height="8.112" fill="#475f7b"/>
+        </g>
+      </g>
+    </g>
+    <g id="chevron-up" transform="translate(517.258 294.167)">
+      <path id="Mask-4" data-name="Mask" d="M4.622,2.6a.326.326,0,0,1-.472,0L2.362.811.574,2.6A.326.326,0,0,1,.1,2.6a.327.327,0,0,1,0-.473L2.126.1A.326.326,0,0,1,2.6.1L4.622,2.129A.327.327,0,0,1,4.622,2.6Z" transform="translate(0 0)"/>
+      <g id="chevron-up-2" data-name="chevron-up" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <g id="Icon_Color-2" data-name="Icon Color" transform="translate(-1.687 -2.704)">
+          <rect id="_Icon_Color-2" data-name="🎨 Icon Color" width="8.098" height="8.112" fill="#babfc7"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
