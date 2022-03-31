@@ -44,9 +44,6 @@ td {
   color: #ffffff;
   opacity: 0.68;
 }
-top_banner {
-padding: 10px;
-}
 .top_banner_links {
   float: right;
   padding: 10px;
@@ -130,6 +127,11 @@ padding: 10px;
 .country_map {
   margin: 20px 0px;
   position: relative;
+}
+@media screen and (max-width: 756px) {
+  .country_map .country_table {
+    display: none;
+  }
 }
 .country_map ul li {
   list-style-type: none;
@@ -289,6 +291,7 @@ padding: 10px;
 }
 .last_table {
   margin-top: 20px;
+  overflow: scroll;
 }
 .last_table table {
   border-collapse: collapse;
