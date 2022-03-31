@@ -44,6 +44,9 @@ td {
   color: #ffffff;
   opacity: 0.68;
 }
+top_banner {
+padding: 10px;
+}
 .top_banner_links {
   float: right;
   padding: 10px;
