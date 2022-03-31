@@ -128,8 +128,16 @@ td {
   margin: 20px 0px;
   position: relative;
 }
+@media screen and (min-width: 756px) {
+  .navbar_sect {
+    display: none;
+  }
+}
 @media screen and (max-width: 756px) {
   .country_map .country_table {
+    display: none;
+  }
+  .sidebar_sect {
     display: none;
   }
 }
